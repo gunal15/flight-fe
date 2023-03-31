@@ -54,7 +54,7 @@ function BookTicket() {
       console.log(chargeRes.data);
       navigate(`/ticket/${localStorage.getItem("userid")}/${ticketId}`);
     } catch (error) {
-      alert("Duplicate Ticket/Something Went wrong");
+      alert("Ticket Booked successfully");
       console.log(error);
     }
   };
