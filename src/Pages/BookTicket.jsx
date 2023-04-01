@@ -55,6 +55,7 @@ function BookTicket() {
       navigate(`/ticket/${localStorage.getItem("userid")}/${ticketId}`);
     } catch (error) {
       alert("Ticket Booked successfully");
+      navigate(`/dashboard/${localStorage.getItem("userid")}`);
       console.log(error);
     }
   };
